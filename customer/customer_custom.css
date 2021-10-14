@@ -1,0 +1,79 @@
+.status{
+	font-weight: 900; 
+	font-size: 15px;
+}
+.status_bidding{
+	color:#fff;
+	background: #20aa8b;
+	
+}
+.status_in_progress{
+	color:#fff;
+	background-color: #165893;
+	
+}
+.status_completed{
+	color:#fff;
+	background: #169347;
+
+}
+.status_progress{
+	color:#fff;
+	background-color: #165893;
+
+}
+.status_approved{
+	color:#fff;
+	background-color: #169347;
+
+}
+.status_cancelled{
+	color:#fff;
+	background-color: #640404;
+
+}
+.status_declined{
+	color:#fff;
+	background-color: #a1682b;
+	
+}
+.status_pending{
+	color:#fff;
+	background: #e89d0fd6 !important;
+	
+}
+.status_payment_pending{
+	color:#fff;
+	background-color: #e89d0fd6;
+	
+}
+.status_in_revision{
+	color:#fff;
+	background-color: #2d394d;
+	
+}
+.status_payment_completed{
+	color:#fff;
+	background: #17a2b8;
+
+}
+..customer-orders-table__status{
+	border-radius: 3px;text-align: center;padding: 3px;
+	padding-bottom: 6px!important;
+}
+.divider{
+	margin-top: 0.2rem!important;
+	margin-bottom: 0.2rem!important;
+}
+.unpaid{
+	color:#fff;
+	background-color: #e89d0fd6;
+	padding: 3px;
+	border-radius: 7px;
+}
+.paid{
+	color:#fff;
+	background: #169347;
+	padding: 3px;
+	border-radius: 7px;
+}
