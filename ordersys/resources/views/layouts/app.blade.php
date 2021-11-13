@@ -32,7 +32,22 @@
 </head>
 <body>
 <div id="app">
+    @if (auth()->check())
+
+        @if (auth()->user()->can('is_admin'))
+            @include('layouts.admin_header')
+        @elseif (auth()->user()->can('is_writer'))
+            @include('layouts.writer_header')
+        @elseif (auth()->user()->can('is_customer'))
+            @include('layouts.customer_header')
+        @else
+            @include('layouts.header_nav')
+        @endif
+    @else
+        @include('layouts.header_nav')
+    @endif
     <div class="container-fluid">
+
         @yield('content')
     </div>
 

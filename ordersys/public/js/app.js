@@ -56116,6 +56116,7 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   }); // on close chat close the chat box but don't remove it from the dom
 
   $(".close-chat").on("click", function (e) {
+    e.preventDefault();
     $(this).parents("div.chat-opened").removeClass("chat-opened").slideUp("fast");
   }); // on click the btn send the message
 
@@ -56239,7 +56240,10 @@ function send(to_user, message, file) {
     complete: function complete() {
       chat_area.find(".loader").remove();
       chat_box.find(".btn-chat").prop("disabled", true);
-      chat_box.find(".chat_input").val(""); //chat_area.animate({scrollTop: chat_area.offset().top + chat_area.outerHeight(true)}, 800, 'swing');
+      chat_box.find(".chat_input").val("");
+      chat_area.animate({
+        scrollTop: chat_area.offset().top + chat_area.outerHeight(true)
+      }, 800, 'swing');
     }
   });
 }
@@ -56381,7 +56385,7 @@ function fetchOldMessages(to_user, old_message_id) {
 
 function getMessageSenderTemplate(message) {
   var body = getMessageBody(message);
-  return "\n           <div class=\"row msg_container base_sent\" data-message-id=\"".concat(message.id, "\" id=\"message-line-").concat(message.id, "\">\n        <div class=\"col-md-9 col-xs-9\">\n            <div class=\"messages msg_sent text-right\">\n                ").concat(body, "\n                <time datetime=\"").concat(message.date_time_str, "\"> ").concat(message.from_user.name, " \u2022 ").concat(message.date_human_readable, " </time>\n            </div>\n        </div>\n        <div class=\"col-md-3 col-xs-3 avatar\">\n            <img src=\"") + window.base_url + '/images/user-avatar.png' + "\" width=\"50\" height=\"50\" class=\"img-responsive\">\n        </div>\n    </div>\n    ";
+  return "\n           <div class=\"row msg_container base_sent\" data-message-id=\"".concat(message.id, "\" id=\"message-line-").concat(message.id, "\">\n        <div class=\"col-md-9 col-xs-9\">\n            <div class=\"messages msg_sent text-right\">\n                ").concat(body, "\n                <time datetime=\"").concat(message.date_time_str, "\"> ").concat(message.from_user.name, " \u2022 ").concat(message.date_human_readable, " </time>\n            </div>\n        </div>\n        <div class=\"col-md-3 col-xs-3 avatar\">\n            <img src=\"") + window.base_url + '/public/images/user-avatar.png' + "\" width=\"50\" height=\"50\" class=\"img-responsive\">\n        </div>\n    </div>\n    ";
 }
 /**
  * getMessageReceiverTemplate
@@ -56395,7 +56399,7 @@ function getMessageSenderTemplate(message) {
 
 function getMessageReceiverTemplate(message) {
   var body = getMessageBody(message);
-  return "\n           <div class=\"row msg_container base_receive\" data-message-id=\"".concat(message.id, "\" id=\"message-line-").concat(message.id, "\">\n           <div class=\"col-md-3 col-xs-3 avatar\">\n             <img src=\"") + window.base_url + '/images/user-avatar.png' + "\" width=\"50\" height=\"50\" class=\"img-responsive\">\n           </div>\n        <div class=\"col-md-9 col-xs-9\">\n            <div class=\"messages msg_receive text-left\">\n                ".concat(body, "\n                <time datetime=\"").concat(message.date_time_str, "\"> ").concat(message.from_user.name, "  \u2022 ").concat(message.date_human_readable, " </time>\n            </div>\n        </div>\n    </div>\n    ");
+  return "\n           <div class=\"row msg_container base_receive\" data-message-id=\"".concat(message.id, "\" id=\"message-line-").concat(message.id, "\">\n           <div class=\"col-md-3 col-xs-3 avatar\">\n             <img src=\"") + window.base_url + '/public/images/user-avatar.png' + "\" width=\"50\" height=\"50\" class=\"img-responsive\">\n           </div>\n        <div class=\"col-md-9 col-xs-9\">\n            <div class=\"messages msg_receive text-left\">\n                ".concat(body, "\n                <time datetime=\"").concat(message.date_time_str, "\"> ").concat(message.from_user.name, "  \u2022 ").concat(message.date_human_readable, " </time>\n            </div>\n        </div>\n    </div>\n    ");
 }
 
 function getMessageBody(message) {

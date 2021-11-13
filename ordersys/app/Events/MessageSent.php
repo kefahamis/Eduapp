@@ -33,6 +33,10 @@ class MessageSent implements ShouldBroadcastNow
      *
      * @return \Illuminate\Broadcasting\Channel|array
      */
+    public function broadcastAs()
+    {
+        return 'message.sent';
+    }
     public function broadcastOn()
     {
         return new PrivateChannel('chat-message.' . $this->message->to_user);

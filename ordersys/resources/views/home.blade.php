@@ -1,4 +1,5 @@
 @extends('layouts.app')
+{{--@include('layouts.customer_header')--}}
 @section('content')
     <div class="row">
         <div class="col-md-5">

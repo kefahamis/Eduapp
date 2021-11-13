@@ -35,7 +35,7 @@
 
     // on close chat close the chat box but don't remove it from the dom
     $(".close-chat").on("click", function (e) {
-
+        e.preventDefault();
         $(this).parents("div.chat-opened").removeClass("chat-opened").slideUp("fast");
     });
 
@@ -185,7 +185,7 @@ function send(to_user, message, file)
             chat_area.find(".loader").remove();
             chat_box.find(".btn-chat").prop("disabled", true);
             chat_box.find(".chat_input").val("");
-            //chat_area.animate({scrollTop: chat_area.offset().top + chat_area.outerHeight(true)}, 800, 'swing');
+            chat_area.animate({scrollTop: chat_area.offset().top + chat_area.outerHeight(true)}, 800, 'swing');
         }
     });
 }
@@ -340,7 +340,7 @@ function getMessageSenderTemplate(message)
             </div>
         </div>
         <div class="col-md-3 col-xs-3 avatar">
-            <img src="` + window.base_url +  '/images/user-avatar.png' + `" width="50" height="50" class="img-responsive">
+            <img src="` + window.base_url +  '/public/images/user-avatar.png' + `" width="50" height="50" class="img-responsive">
         </div>
     </div>
     `;
@@ -361,7 +361,7 @@ function getMessageReceiverTemplate(message)
     return `
            <div class="row msg_container base_receive" data-message-id="${message.id}" id="message-line-${message.id}">
            <div class="col-md-3 col-xs-3 avatar">
-             <img src="` + window.base_url +  '/images/user-avatar.png' + `" width="50" height="50" class="img-responsive">
+             <img src="` + window.base_url +  '/public/images/user-avatar.png' + `" width="50" height="50" class="img-responsive">
            </div>
         <div class="col-md-9 col-xs-9">
             <div class="messages msg_receive text-left">

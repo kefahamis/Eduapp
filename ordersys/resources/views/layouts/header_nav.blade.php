@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="page-header__inner">
 			<div class="page-header__logo">
-				<a href="https://www.eddusaver.com">
+				<a href="/">
 					<img src="{{asset('images/eddusaver logo.png')}}" width="100%;">
 				</a>
 			</div>

@@ -35,11 +35,11 @@ time {
 
 .chat_box {
     margin-right: 25px;
-    width: 310px;
+    width: 500px;
 }
 
 .chat-area {
-    height: 400px;
+    height: 300px;
     overflow-y: scroll;
 }
 
@@ -49,8 +49,9 @@ time {
 
 #chat-overlay {
     position: fixed;
-    right: 0%;
     bottom: 0%;
+    right: 0%;
+    z-index: 1050;
 }
 
 .glyphicon-ok {
@@ -61,16 +62,19 @@ time {
     -webkit-animation: spin 1000ms infinite linear;
     animation: spin 1000ms infinite linear;
 }
+
 @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
     }
 }
+
 .chat_input {
     font-size: 15px;
 }

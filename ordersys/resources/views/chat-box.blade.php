@@ -22,28 +22,28 @@
                         <input type="file" name="image" class="image" accept="image/png, image/gif, image/jpeg"  />
                     </form>
 
-                    <div class="emoji-list">
-                        <ul>
-                            <li><a href="javascript:void(0);" class="emoji">&#128512;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128513;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128514;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128515;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128516;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128517;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128518;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128519;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128520;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128521;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128522;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128523;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128524;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128525;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128526;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128527;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128528;</a></li>
-                            <li><a href="javascript:void(0);" class="emoji">&#128529;</a></li>
-                        </ul>
-                    </div>
+{{--                    <div class="emoji-list">--}}
+{{--                        <ul>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128512;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128513;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128514;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128515;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128516;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128517;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128518;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128519;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128520;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128521;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128522;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128523;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128524;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128525;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128526;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128527;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128528;</a></li>--}}
+{{--                            <li><a href="javascript:void(0);" class="emoji">&#128529;</a></li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
